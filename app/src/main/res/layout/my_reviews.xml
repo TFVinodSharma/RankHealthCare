@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v1"/>
+
+        <TextView
+            android:text="Gowtham Kumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/v1"
+            android:id="@+id/lname"/>
+
+        <TextView
+        android:text="25-07-2017"
+        android:textSize="22sp"
+        android:layout_toRightOf="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/date" />
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+
+    <TextView
+        android:text="To discuss every thing with this lawyer. he 'll give correct suggestion.He is the well experianced person"
+        android:textSize="20sp"
+        android:textColor="#c8000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toLeftOf="@+id/lin1"
+        android:layout_centerVertical="true"
+        android:id="@+id/msg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/lin1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"
+                android:id="@+id/details"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="#ec0f21"
+                android:src="@drawable/ic_delete"
+                android:id="@+id/delete"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

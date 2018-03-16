@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_review"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_size"
+        android:layout_above="@+id/give"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give Rating"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:id="@+id/give"/>
+
+
+</RelativeLayout>

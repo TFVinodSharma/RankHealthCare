@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginTop="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:text="Gowtham Kumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/v1"
+            android:id="@+id/lname"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/v1"
+            android:id="@+id/lin1">
+
+            <TextView
+                android:text="Status: "
+                android:textSize="@dimen/font_size"
+                android:layout_toRightOf="@+id/v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="10dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_remove_red_eye_black_24dp"
+                android:layout_gravity="center"
+                android:id="@+id/img"/>
+
+            <TextView
+                android:text="Accepted"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/status" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" cancel "
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:layout_centerVertical="true"
+            android:id="@+id/cancel"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/cancel"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Date: 25-11-2017 "
+                android:textSize="@dimen/font_size"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/date"/>
+
+
+
+            <TextView
+                android:text="Time: 01.00PM"
+                android:textSize="@dimen/font_size"
+                android:textColor="#000000"
+                android:layout_toRightOf="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:id="@+id/time" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

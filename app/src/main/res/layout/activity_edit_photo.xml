@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/da"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/box"
+            android:padding="3dp"
+            android:id="@+id/img"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rel1">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size"
+            android:text="Change Photo"
+            android:background="@drawable/box"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/v1"
+            android:textAllCaps="false"
+            android:id="@+id/change" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:background="@drawable/shape"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/v1"
+        android:id="@+id/upload" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

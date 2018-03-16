@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_license"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scriptmall.doctorbookphp.ManageLicenseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience In"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:textSize="@dimen/font_size"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="120dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practicing Since"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="@dimen/font_size"
+            android:hint="YYYY"
+            android:text="1998"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/box"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:id="@+id/etsince" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="License Issue Date"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="@dimen/font_size"
+            android:text="25-07-1998"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/box"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/etissuedate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Practicing In"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:textSize="@dimen/font_size"
+            android:text="ENT "
+            android:background="@drawable/box"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|start"
+            android:padding="5dp"
+            android:id="@+id/etpin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Counselling Fee (Per Hour)"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="18sp"
+            android:text="100"
+            android:paddingLeft="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/box"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:id="@+id/etfees" />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Languages Spoken "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:text="Tamil,Eglish"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/etlanguage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number (Office)"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:text="8248867288"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:id="@+id/etophone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Office Address"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Building"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:hint="Building"
+                    android:text=""
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:id="@+id/etbuild" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Street"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:hint="Street"
+                    android:text=""
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:id="@+id/etstreet" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:hint="Area"
+                    android:text=""
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:id="@+id/etarea" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:text="http://www.example.com"
+                    android:paddingLeft="15dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/etweb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About me"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium"
+                    android:background="@drawable/box"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left|start"
+                    android:padding="5dp"
+                    android:lineSpacingExtra="2dp"
+                    android:id="@+id/etabt" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Business Time"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear All"
+                    android:textColor="#c00"
+                    android:textSize="@dimen/font_size"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/clear"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="15:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv1"
+                            android:inputType="time"
+                            android:id="@+id/etmonfrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="20:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv1"
+                            android:inputType="time"
+                            android:id="@+id/etmonto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="15:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv2"
+                            android:inputType="time"
+                            android:id="@+id/ettuefrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="20:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv2"
+                            android:inputType="time"
+                            android:id="@+id/ettueto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wedesday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="15:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv3"
+                            android:inputType="time"
+                            android:id="@+id/etwedfrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="20:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv3"
+                            android:inputType="time"
+                            android:id="@+id/etwedto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="15:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv4"
+                            android:inputType="time"
+                            android:id="@+id/etthursfrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="20:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv4"
+                            android:inputType="time"
+                            android:id="@+id/etthursto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv5"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="15:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv5"
+                            android:inputType="time"
+                            android:id="@+id/etfrifrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text="20:00"
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv5"
+                            android:inputType="time"
+                            android:id="@+id/etfrito"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Saturdy"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv6"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text=""
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv6"
+                            android:inputType="time"
+                            android:id="@+id/etsatfrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text=""
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv6"
+                            android:inputType="time"
+                            android:id="@+id/etsatto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/font_size"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/font_size"
+                            android:layout_margin="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/tv7"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text=""
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/tv7"
+                            android:inputType="time"
+                            android:id="@+id/etsunfrom"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textSize="@dimen/font_size"
+                            android:text=""
+                            android:hint="HH:MM"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:background="@drawable/box"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/tv7"
+                            android:inputType="time"
+                            android:id="@+id/etsunto"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:text="Submit"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/shape"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/user">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/review"
+            android:icon="@drawable/ic_comment"
+            android:title="My Reviews" />
+        <item
+            android:id="@+id/appoint"
+            android:icon="@drawable/ic_transaction_item"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout_white"
+            android:title="Logout" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/lawyer">
+        <item
+            android:id="@+id/lhome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/lprofile"
+            android:icon="@drawable/ic_person_black"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/lmaage"
+            android:icon="@drawable/doctor"
+            android:title="Manage License" />
+        <item
+            android:id="@+id/lreview"
+            android:icon="@drawable/ic_comment"
+            android:title="My Reviews" />
+        <item
+            android:id="@+id/lappoint"
+            android:icon="@drawable/ic_transaction_item"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/lureview"
+            android:icon="@drawable/ic_remove_red_eye_black_24dp"
+            android:title="User Reviews" />
+        <item
+            android:id="@+id/luappoint"
+            android:icon="@drawable/ic_transaction_white"
+            android:title="My Appiontments" />
+        <item
+            android:id="@+id/llogout"
+            android:icon="@drawable/ic_logout_white"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
